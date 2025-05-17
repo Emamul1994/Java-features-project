@@ -45,7 +45,7 @@ public class LambdaExpressionSortWithComparator {
         persons.add(new Person(25, "Akki"));
 
         Collections.sort(persons, (p1, p2) -> {
-                return p1.age - p2.age; 
+                return p1.age - p2.age;
         });
         persons.stream().forEach(person -> {
             System.out.println(person.age + " : " + person.name);
